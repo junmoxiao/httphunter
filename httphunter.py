@@ -56,7 +56,7 @@ class scan():
                     except:
                         pass
                     printLock.acquire()
-                    print "\t   %s        %s        %s        %s\t" % (ip, status, banner, title),
+                    print "\t   %s        %s        %s        %s\t\n" % (ip, status, banner, title),
                     #print ''
                     # Save log
                     with open("./log/" + self.ip[:-3]+'-'+ self.ip[-2:]+ ".log", 'a') as f:
